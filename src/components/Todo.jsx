@@ -77,7 +77,10 @@ const Todo = () => {
               ) : (
                 <ul className="space-y-2">
                   {todos.map((todo) => (
-                    <li className="flex items-center justify-between gap-4" key={todo.id}>
+                    <li
+                      className="flex items-center justify-between gap-4 p-3 bg-gray-100 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-150"
+                      key={todo.id}
+                    >
                       <div className="flex gap-2">
                         <button
                         type="button"
